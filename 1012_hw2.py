@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 2 * np.pi, 40)
+plt.subplot(2, 1, 1) 
+plt.plot(x, np.sin(x), color='purple')
+plt.text(3, 0.5, r'$\pi$',fontsize=18)
+plt.subplot(234)
+plt.plot(x, 1.5*np.sin(x), color='y')
+plt.text(3, 0.5, r'$\alpha$',fontsize=18)
+plt.subplot(235)
+plt.plot(x, np.cos(x), color='olive')
+plt.text(3, 0.5, r'$\beta$',fontsize=18)
+plt.subplot(2, 3, 6)
+plt.plot(x, 2*np.cos(x), color='lime')
+plt.text(3, 0.5, r'$\gamma$',fontsize=18)
+plt.show()
